@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="rtmp://192.168.188.23:1993/rtmplive/room" borderStyle="roundedRect" placeholder="rtmp://192.168.188.23:1993/rtmplive/room" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xuz-vw-XtN">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V12-Pd-dn4">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FU5-Yf-3Vo"/>
+                                    <constraint firstAttribute="width" constant="80" id="H5F-GH-E3J"/>
+                                </constraints>
+                                <state key="normal" title="开始直播"/>
+                                <connections>
+                                    <action selector="starLive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eBz-c6-JEU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xuz-vw-XtN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="17r-eq-EbK"/>
+                            <constraint firstItem="V12-Pd-dn4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4BQ-fq-99S"/>
+                            <constraint firstItem="V12-Pd-dn4" firstAttribute="top" secondItem="Xuz-vw-XtN" secondAttribute="bottom" constant="74" id="4X4-s7-ZVC"/>
+                            <constraint firstAttribute="trailing" secondItem="Xuz-vw-XtN" secondAttribute="trailing" constant="20" id="MEM-6R-Htt"/>
+                            <constraint firstItem="Xuz-vw-XtN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="qde-4S-sFg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pushURLTextField" destination="Xuz-vw-XtN" id="qcE-jz-Qup"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
