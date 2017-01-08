@@ -1,0 +1,13 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'XNLiveAppDemo' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+  pod 'AFNetworking', '~> 3.1.0'
+  # 融云直播聊天室SDK
+  pod 'RongCloudIM'
+  # Pods for XNLiveAppDemo
+  pod 'Masonry','~> 0.6.4'
+
+end

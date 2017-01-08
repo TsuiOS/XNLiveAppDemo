@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46D244FDBAEA0B68BAA64D23 /* libPods-XNLiveAppDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27998462563E9ED73AFD0E85 /* libPods-XNLiveAppDemo.a */; };
 		791FAF401DFAAAF600A657C7 /* AlivcLiveVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791FAF3F1DFAAAF600A657C7 /* AlivcLiveVideo.framework */; };
 		79884C5E1DFBA85E0093606D /* AliyunPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79884C5D1DFBA85E0093606D /* AliyunPlayerSDK.framework */; };
 		E7F81E311DFA768D00B2D4CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F81E301DFA768D00B2D4CF /* main.m */; };
@@ -26,8 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27998462563E9ED73AFD0E85 /* libPods-XNLiveAppDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XNLiveAppDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		791FAF3F1DFAAAF600A657C7 /* AlivcLiveVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlivcLiveVideo.framework; path = XNLiveAppDemo/AlivcLiveVideo.framework; sourceTree = "<group>"; };
 		79884C5D1DFBA85E0093606D /* AliyunPlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AliyunPlayerSDK.framework; path = XNLiveAppDemo/AliyunPlayerSDK.framework; sourceTree = "<group>"; };
+		B9AEF954AA67C2D4B5590376 /* Pods-XNLiveAppDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XNLiveAppDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XNLiveAppDemo/Pods-XNLiveAppDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E6551B13BB877B62B161249E /* Pods-XNLiveAppDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XNLiveAppDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XNLiveAppDemo/Pods-XNLiveAppDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E7F81E2C1DFA768D00B2D4CF /* XNLiveAppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XNLiveAppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F81E301DFA768D00B2D4CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E7F81E321DFA768D00B2D4CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,18 +66,29 @@
 				E7F81E4E1DFA77F400B2D4CF /* AudioToolbox.framework in Frameworks */,
 				E7F81E4C1DFA77EC00B2D4CF /* VideoToolbox.framework in Frameworks */,
 				E7F81E4A1DFA77E400B2D4CF /* libz.tbd in Frameworks */,
+				46D244FDBAEA0B68BAA64D23 /* libPods-XNLiveAppDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A49A92F57C037C365BDDA45F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9AEF954AA67C2D4B5590376 /* Pods-XNLiveAppDemo.debug.xcconfig */,
+				E6551B13BB877B62B161249E /* Pods-XNLiveAppDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E7F81E231DFA768D00B2D4CF = {
 			isa = PBXGroup;
 			children = (
 				E7F81E2E1DFA768D00B2D4CF /* XNLiveAppDemo */,
 				E7F81E2D1DFA768D00B2D4CF /* Products */,
 				E7F81E481DFA77E400B2D4CF /* Frameworks */,
+				A49A92F57C037C365BDDA45F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +138,7 @@
 				E7F81E4D1DFA77F400B2D4CF /* AudioToolbox.framework */,
 				E7F81E4B1DFA77EC00B2D4CF /* VideoToolbox.framework */,
 				E7F81E491DFA77E400B2D4CF /* libz.tbd */,
+				27998462563E9ED73AFD0E85 /* libPods-XNLiveAppDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7F81E431DFA768D00B2D4CF /* Build configuration list for PBXNativeTarget "XNLiveAppDemo" */;
 			buildPhases = (
+				56E3E3467D6E8B2B3E07E0FE /* [CP] Check Pods Manifest.lock */,
 				E7F81E281DFA768D00B2D4CF /* Sources */,
 				E7F81E291DFA768D00B2D4CF /* Frameworks */,
 				E7F81E2A1DFA768D00B2D4CF /* Resources */,
+				ED9B3D73CAA05B3F9CB46B0A /* [CP] Embed Pods Frameworks */,
+				9A63EBAA770E39FD8ECD636B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +214,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56E3E3467D6E8B2B3E07E0FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A63EBAA770E39FD8ECD636B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XNLiveAppDemo/Pods-XNLiveAppDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED9B3D73CAA05B3F9CB46B0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XNLiveAppDemo/Pods-XNLiveAppDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E7F81E281DFA768D00B2D4CF /* Sources */ = {
@@ -322,6 +389,7 @@
 		};
 		E7F81E441DFA768D00B2D4CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9AEF954AA67C2D4B5590376 /* Pods-XNLiveAppDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J7H6SN66AX;
@@ -340,6 +408,7 @@
 		};
 		E7F81E451DFA768D00B2D4CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6551B13BB877B62B161249E /* Pods-XNLiveAppDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J7H6SN66AX;
